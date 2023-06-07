@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+</head>
+<body>
+    <div class="header">
+        <h1 style="margin:5px">To Do List</h1>
+    </div>
+    <div class="menu">
+        <h1>Menu</h1>
+        <div class = "submit">
+            <form class = "add">
+            <h2>Task Submission</h2>
+            <input type="text" id="name" name="name" placeholder="Task Name">
+            <input type="date" id="dateId" name="dueDate" value="2023-06-01" min="2023-06-01" max="2033-06-01">
+            <button id = "subEl">SUBMIT</button>
+            </form>
+        </div>
+        <div class = "sortOptions">
+            <h2>Sort Options</h2>
+            <button id="sortEl">Sort by Date</button> 
+            <button id= "nameSortEl">Sort by Name</button> 
+        </div>
+        <div class = "filterOptions">
+            <form class = "filter">
+                <h2>Filter Options</h2>
+                <input type = "date" name = "date" id = "sortDate" value="2023-06-01" min="2023-06-01" max="2033-06-01">
+                <button id="filterDate">Filter</button>
+            </form>
+        </div>
+        <div class = "saveOptions">
+            <h2>Save/Undo</h2>
+            <button id="hide">Hide Completed</button>
+            <button id="unhide">Unhide Completed</button>
+            <button id="del">Delete Completed</button>
+        </div>
+    </div>
+    <div class = "tasks">
+        <h2 id = "emptyTasks"></h2>
+        <ul id="taskList">
+        
+        </ul>
+    </div>
+<link rel="stylesheet" href="styling.css">
+<script src="bundle.js"></script>
+</body>
+</html>
